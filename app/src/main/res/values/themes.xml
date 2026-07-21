@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Theme.TheRecipeBox" parent="Theme.Material3.DayNight.NoActionBar">
 
-    <style name="Theme.TheRecipeBox" parent="android:Theme.Material.Light.NoActionBar" />
+    <item name="colorPrimary" >@color/dark_blue</item>
+    <item name="colorSecondary" >@color/indigo_violet</item>
+    <item name="colorTertiary" >@color/cyan</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+    </style>
 </resources>
