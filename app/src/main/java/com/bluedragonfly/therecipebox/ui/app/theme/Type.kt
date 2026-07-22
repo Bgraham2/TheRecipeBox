@@ -1,4 +1,4 @@
-package com.bluedragonfly.therecipebox.ui.theme
+package com.bluedragonfly.therecipebox.ui.app.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -11,6 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.bluedragonfly.therecipebox"
         minSdk = 24
+        //noinspection OldTargetApi, this is false positive. 36 is the current SDK level.
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"

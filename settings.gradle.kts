@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage") //Ignored warning because it is not an issue, will likely disappear with future gradle updates
+
 pluginManagement {
     repositories {
         google {

@@ -1,4 +1,4 @@
-package com.bluedragonfly.therecipebox.ui.theme
+package com.bluedragonfly.therecipebox.ui.app.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
