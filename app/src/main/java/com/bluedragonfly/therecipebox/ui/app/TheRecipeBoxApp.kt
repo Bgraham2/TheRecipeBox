@@ -17,7 +17,6 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -29,10 +28,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.recipebox.ui.screens.AddRecipeScreen
-import com.example.recipebox.ui.screens.FavoritesScreen
-import com.example.recipebox.ui.screens.HomeScreen
-import com.example.recipebox.ui.screens.RecipeDetailScreen
+import com.bluedragonfly.therecipebox.ui.app.screens.AddRecipeScreen
+import com.bluedragonfly.therecipebox.ui.app.screens.FavoritesScreen
+import com.bluedragonfly.therecipebox.ui.app.screens.HomeScreen
+import com.bluedragonfly.therecipebox.ui.app.screens.RecipeDetailScreen
 
 private sealed class Destination(
     val route: String,
@@ -52,8 +51,8 @@ fun TheRecipeBoxApp(viewModel: RecipeBoxViewModel = viewModel()) {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val destination = backStackEntry?.destination
     val topLevel = listOf(Destination.Home, Destination.Favorites)
-    val configuration = LocalConfiguration.current
-    val isExpanded = configuration.screenWidthDp >= 840
+    val windowSize = rememberRecipeWindowSize()
+    val isExpanded = windowSize == TheRecipeBoxWindowSize.Expanded
 
     Scaffold(
         contentWindowInsets = WindowInsets(0),
