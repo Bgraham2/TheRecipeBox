@@ -1,7 +1,6 @@
 package com.bluedragonfly.therecipebox.ui.app.screens
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -29,9 +28,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.recipebox.model.Recipe
-import com.example.recipebox.ui.components.EmptyState
-import com.example.recipebox.ui.components.RecipeArtwork
+import com.bluedragonfly.therecipebox.ui.app.model.Recipe
+import com.bluedragonfly.therecipebox.ui.app.components.EmptyState
+import com.bluedragonfly.therecipebox.ui.app.components.RecipeArtwork
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
